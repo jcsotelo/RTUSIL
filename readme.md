@@ -1,36 +1,26 @@
-# challenge_microservice_template
+# Reto_01 USIL
 
-initial starter with c# + myql
+Endpoints gets para visualizar y truncar Log.
 
-# one click run
+# variable de entorno
 
 ```
-docke-compose down
-docke-compose up
+LOG_FILE_PATH   C:\JuanCarlos\USIL\gistfile1.txt
+
 ```
 
 # endpoints
 
-**create user**
+**Iniciar explorador**
 
 ```
-curl --location --request POST 'http://localhost:5000/v1/user' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "UserName":"Barney",
-    "Hobbies":"Reichert",
-    "Location":"gu"
-}'
+http://localhost:63391/weatherforecast
 ```
 
-**list users**
+**Cambiar los Controllers**
 
 ```
-curl --location --request GET 'http://localhost:5000/v1/user/' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "UserName":"Jonatan",
-    "Hobbies":"Krajcik",
-    "Location":"ast"
-}'
+http://localhost:63391/log
+
+http://localhost:63391/truncate
 ```
